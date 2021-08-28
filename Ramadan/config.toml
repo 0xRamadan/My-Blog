@@ -1,4 +1,4 @@
-baseURL = "https://Ramadan.github.io/"
+baseURL = "https://mahmoudabdallah.netlify.app/"
 # [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "en"
 # language code
@@ -155,7 +155,7 @@ theme = "DoIt"
     # ICP info only in China (HTML format is supported)
     icp = ""
     # license info (HTML format is supported)
-    license = '<a rel="license external nofollow noopener noreffer" href="https://Ramadan.github.io/" target="_blank">Mahmoud Abdallah Blog</a>'
+    license = '<a rel="license external nofollow noopener noreffer" href="https://mahmoudabdallah.netlify.app/" target="_blank">Mahmoud Abdallah Blog</a>'
 
   #  Section (all posts) page config
   [params.section]
@@ -594,7 +594,7 @@ theme = "DoIt"
 [author]
   name = "Mahmoud Abdallah"
   email = "mah64725@gmail.com"
-  link = "https://Ramadan.github.io/"
+  link = "https://mahmoudabdallah.netlify.app/"
 
 # Sitemap config
 [sitemap]
