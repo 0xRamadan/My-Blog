@@ -8,7 +8,7 @@ categories: ["All", "Professional"]
 {{< figure src="/images/GrokkingAlgorithmsNotes-small.jpg" alt="an image contain Grokking Algorithms Book and some code lines on a screen in the background" title="Grokking Algorithms">}}
 <b>All my notes are going to be on my github account</b>
 <a href="https://github.com/RaymondReddigton" target="_blank">My Github Account</a>
-<div>
+
 
 ## Chapter 01
 ### Introduction to algorithms
@@ -263,7 +263,6 @@ You might soon find that you’re using them all the time:
 
 • Hash tables are great for catching duplicates.
 
-</div>
 
 
 

@@ -10,7 +10,7 @@ categories: ["All", "Professional"]
 
 <b>All my notes are going to be on my github account</b>
 <a href="https://github.com/RaymondReddigton" target="_blank">My Github Account</a>
-<div>
+
 
 ## Chapter 01
 Note of Chapter one
@@ -193,4 +193,3 @@ Name: mahmoud Abdallah Hassan
 	promise to make you a good programmer. It cannot promise to give you “code-sense.”
 	All it can do is show you the thought processes of good programmers and the tricks, techniques,
 	and tools that they use.
-</div>
