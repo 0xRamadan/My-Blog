@@ -27,7 +27,6 @@ Some common Big O run times sorted from fastest to slowest:
 • O(n!). Example: A really slow algorithm, like the traveling Salesperson.
 
 ### Recap
-Recap 
 
 • Binary search is a lot faster than simple search. 
 
@@ -54,7 +53,6 @@ Chapter 02: Selection Sort
 •	Selection sort is a neat algorithm, but it’s not very fast. Quicksort is a faster sorting algorithm that only takes O(n log n) time.
 
 ### Recap
-Recap:
 
 • When you want to store multiple elements, use an array or a list. 
 
@@ -106,8 +104,7 @@ Chapter 03:  Recursion
 {{< figure src="/images/Picture1.png" alt="a function in python handling base case and the recursive case" >}}
 
 -	Using the stack is convenient because you don’t have to keep track of a pile of boxes yourself—the stack does it for you. but there’s a cost: saving all that info can take up a lot of memory.
-### Recap
-Recap 
+### Recap 
 
 • Recursion is when a function calls itself.
 
@@ -121,6 +118,7 @@ Recap
 
 ## Chapter 04
 ### Quicksort
+
 Chapter 04:  Quicksort
 
 •	Quicksort is a sorting algorithm, and a much faster one than selection sort.
@@ -136,7 +134,6 @@ Chapter 04:  Quicksort
 •	When you’re writing a recursive function involving an array, the base case is often an empty array or an array with one element. If you’re stuck, try that first.
 
 ### Recap
-Recap: 
 
 •	D&C works by breaking a problem down into smaller and smaller pieces. If you’re using D&C on a list, the base case is probably an empty array or an array with one element.
 
@@ -145,6 +142,86 @@ Recap:
 •	 The constant in Big O notation can matter sometimes. That’s why quicksort is faster than merge sort.
 
 •	The constant almost never matters for simple search versus binary search, because O(log n) is so much faster than O(n) when your list gets big.
+
+## Chapter 05
+### Hash Tables
+Chapter 05:  Hash Tables 
+
+→ Using hash tables for lookups
+Hash tables are great when you want to 
+
+• Create a mapping from one thing to another thing.
+
+• Look something up.
+
+→ Preventing duplicate entries.
+
+{{< figure src="/images/Picture2.png" alt="Preventing duplicate entries" >}}
+
+→ Using hash tables as a cache
+
+you’d just remember and answer. This is how caching works: websites remember the data instead of recalculating it.
+
+{{< figure src="/images/Picture3.png" alt="Using hash tables as a cache" >}}
+
+When you visit a page on Facebook, it first checks whether the page is stored in the hash. 
+
+{{< mermaid >}}graph TD;
+    A[request a url from Facebook.] --> C{Is this url in the cache?}
+    C --> D[Yes: send the data in the cache.]
+    C --> E[No: make the server do some work.]
+{{< /mermaid >}}
+
+```Python
+    cache = {} 
+    def get_page(url): 
+        if cache.get(url): 
+            return cache[url]    # returned cached data
+        else: 
+            data = get_data_from_server(url)
+            cache[url] = data    # saves this data in your cache first.
+        return data
+```
+Here, you make the server do work only if the URL isn’t in the cache. Before you return the data, though, you save it in the cache. The next time someone requests this URL, you can send the data from the cache
+instead of making the server do the work.
+### Recap
+
+ To recap, hashes are good for 
+
+• Modeling relationships from one thing to another thing.
+
+• Filtering out duplicates.
+
+• Caching/memorizing data instead of making your server do work.
+
+### Collisions
+
+Def: 
+an event of two or more records being assigned the same identifier or location in memory.
+
+Simplest way to deal with collisions is this: if multiple keys map to the same slot, start a linked list at that slot.
+
+{{< figure src="/images/Picture4.png" alt="Linked list picture" >}}
+
+{{< figure src="/images/Picture5.png" alt="slot wasted in a linked list picture." >}}
+
+There is a problem here, The entire hash table is totally empty except for one slot. And that slot has a giant linked list! Every single element in this hash table is in the linked list. That’s as bad as putting everything in a linked list to begin with. It’s going to slow down your hash table.
+
+<!-- styling using shortcode of DoIt theme -->
+{{< style "color: yellow" >}}
+A good hash function will give you very few collisions.
+{{< /style >}}
+
+### Performance
+{{< figure src="/images/Picture6.png" alt="the difference among linked list, arrays and hash tabels" >}}
+In the average case, hash tables take O(1) for everything. O(1) is called constant time. You haven’t seen constant time before. It doesn’t mean instant. It means the time taken will stay the same, regardless of how big the hash table is.
+
+It’s important that you don’t hit worst-case performance with hash tables. And to do that, you need to avoid collisions. To avoid collisions, you need:
+
+• A low load factor.
+
+• A good hash function.
+
 
 </div>
 
