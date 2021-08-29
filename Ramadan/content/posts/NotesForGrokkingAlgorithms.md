@@ -221,7 +221,47 @@ It’s important that you don’t hit worst-case performance with hash tables. A
 • A low load factor.
 
 • A good hash function.
+### Load factor
 
+Load factor measures how many empty slots remain in your hash table
+
+Having a load factor greater than 1 means you have more items than slots in your array.
+{{< figure src="/images/Picture7.png" >}}
+{{< figure src="/images/Picture8.png" >}}
+
+Once the load factor starts to grow, you need to add more slots to your hash table. This is called resizing.
+
+{{< style "color: yellow" >}}
+A good rule of thumb is, resize when your load factor is greater than 0.7.
+{{< /style >}}
+
+A good hash function:
+
+•	A good hash function distributes values in the array evenly.
+
+•	A bad hash function groups values together and produces a lot of collisions.
+
+### Recap
+
+You’ll almost never have to implement a hash table yourself. The programming language you use should provide an implementation for you.
+ You can use Python’s hash tables and assume that you’ll get the average case performance: constant time.
+
+Hash tables are a powerful data structure because they’re so fast and they let you model data in a different way.
+You might soon find that you’re using them all the time:
+
+• You can make a hash table by combining a hash function with an array.
+
+• Collisions are bad. You need a hash function that minimizes collisions.
+
+• Hash tables have really fast search, insert, and delete.
+
+• Hash tables are good for modeling relationships from one item to another item.
+
+• Once your load factor is greater than .07, it’s time to resize your hash table.
+
+• Hash tables are used for caching data (for example, with a web server).
+
+• Hash tables are great for catching duplicates.
 
 </div>
 
