@@ -6,7 +6,10 @@ draft: false
 
 <b>Some problems that I solved.</b>
 
-<b>All the problem will be </b><a href="https://github.com/RaymondReddigton/Algorithms-and-Data-Structures-training---IEEE-CS-ZSB" target="_blank" >here</a>.
+{{< admonition type=note title="Note" open=true >}}
+<b>All the problems will be at this </b><a href="https://github.com/RaymondReddigton/Algorithms-and-Data-Structures-training---IEEE-CS-ZSB" target="_blank" >repo</a>.
+{{< /admonition >}}
+
 
 ## Day 01
 ### array left rotation
