@@ -2,14 +2,15 @@
 title: "NotesForCleanCodeBook"
 date: 2021-08-26T18:27:35+02:00
 draft: false
-tags: []
+tags: ["Book Notes"]
 categories: ["All", "Professional"]
 ---
-
-{{< figure src="/images/CleanCodePicture.jpg" title="Clean Code book" alt="a picture for clean code book" >}}
-
+{{< admonition type=note title="Note" open=true >}}
 <b>All my notes are going to be on my github account</b>
 <a href="https://github.com/RaymondReddigton" target="_blank">My Github Account</a>
+{{< /admonition >}}
+
+{{< figure src="/images/CleanCodePicture.jpg" title="Clean Code book" alt="a picture for clean code book" >}}
 
 
 ## Chapter 01

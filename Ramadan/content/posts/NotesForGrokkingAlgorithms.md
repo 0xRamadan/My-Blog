@@ -2,12 +2,16 @@
 title: "NotesForGrokkingAlgorithms"
 date: 2021-08-27T01:18:55+02:00
 draft: false
-tags: []
+tags: ["Book Notes"]
 categories: ["All", "Professional"]
 ---
-{{< figure src="/images/GrokkingAlgorithmsNotes-small.jpg" alt="an image contain Grokking Algorithms Book and some code lines on a screen in the background" title="Grokking Algorithms">}}
+
+{{< admonition type=note title="Note" open=true >}}
 <b>All my notes are going to be on my github account</b>
 <a href="https://github.com/RaymondReddigton" target="_blank">My Github Account</a>
+{{< /admonition >}}
+
+{{< figure src="/images/GrokkingAlgorithmsNotes-small.jpg" alt="an image contain Grokking Algorithms Book and some code lines on a screen in the background" title="Grokking Algorithms">}}
 
 
 ## Chapter 01
